@@ -1,0 +1,11 @@
+prefix=/Volumes/CodeApp/C_Build_Work/libs/libx264/armeabi-v7a
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: x264
+Description: H.264 (MPEG4 AVC) encoder library
+Version: 0.161.3048
+Libs: -L${exec_prefix}/lib -lx264 -lm -ldl
+Libs.private: 
+Cflags: -I${prefix}/include 
